@@ -1,0 +1,11 @@
+@media (max-width: 450px){
+    .abc{gap: 15px;
+        
+           }
+}
+@media (max-width: 450px){
+    .abc div{
+                font-size:10px;
+            
+           }
+}
