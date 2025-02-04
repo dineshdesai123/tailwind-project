@@ -1,8 +1,13 @@
+*{
+    margin:0%;
+    padding:0%;
+}
 .abc{
     box-sizing: border-box;
     width :100vw;
     height :8vh;
     margin:auto;
+    margin-bottom: 0.5em;
     display:flex;
     flex-direction: row;
     justify-content:center;
@@ -22,4 +27,51 @@
 .abc div:hover{
     transform: scale(1.3);
     background-color: black;
+}
+.def{
+    width:95%;
+    height:100%;
+    margin:auto;
+    position:relative;
+    display: grid;
+    grid-template-columns:auto 1fr; 
+    grid-template-rows: auto auto;
+    gap: 15px;
+}
+.def1{
+    border:1px solid blue;  
+    text-align: center;
+
+}
+.def1:first-child{
+    grid-column: 1/3;
+    height: 10vh;
+    background-color: grey;
+    color:white;
+    align-self:start;
+    line-height: 60px;
+}
+.def1:nth-child(2){
+    width:200px;
+    grid-column:1/2;
+    height: 70vh;
+    line-height: 400px;
+    color: black;
+    background-color:rgb(118, 215, 162);
+}
+.def1:nth-child(3){
+    grid-column:2/3;
+    height: 70vh;
+    line-height: 60px;
+    line-height: 400px;
+    color:blue;
+    background-color: rgb(141, 141, 35);
+}
+.def1:last-child{
+    grid-column: 1/3;
+    height: 10vh;
+    background-color: grey;
+    color:white;
+    align-self: end;
+    line-height: 60px;
 }
